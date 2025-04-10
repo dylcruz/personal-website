@@ -1,13 +1,15 @@
 :root {
-    --primary-color: #1e88e5;
+    --primary-color: #4a9eff;
     --secondary-color: #2962ff;
-    --dark-color: #1565c0;
-    --light-color: #90caf9;
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --text-light: #757575;
-    --border-color: #e0e0e0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --dark-color: #0078ff;
+    --light-color: #6ab3ff;
+    --bg-color: #121212;
+    --bg-accent: #1e1e1e;
+    --bg-light: #2d2d2d;
+    --text-color: #e0e0e0;
+    --text-light: #a0a0a0;
+    --border-color: #333333;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --border-radius: 8px;
     --transition: all 0.3s ease;
 }
@@ -22,7 +24,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f8f9fa;
+    background-color: var(--bg-color);
 }
 
 a {
@@ -63,8 +65,8 @@ nav {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--primary-color);
-    background-color: var(--light-color);
+    color: var(--text-color);
+    background-color: var(--primary-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -88,7 +90,8 @@ nav {
     transition: var(--transition);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary-color);
 }
 
@@ -111,13 +114,26 @@ nav {
 /* Hero Section */
 #hero {
     padding: 160px 0 100px;
-    background: linear-gradient(135deg, var(--bg-color) 0%, #f5f5f5 100%);
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-accent) 100%);
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
 }
 
 .hero-content h1 {
@@ -130,7 +146,7 @@ nav {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--text-light);
+    color: var(--text-color);
 }
 
 .hero-content p {
@@ -139,6 +155,7 @@ nav {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: var(--text-light);
 }
 
 .hero-btns {
@@ -174,7 +191,7 @@ nav {
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--bg-color);
 }
 
 /* Section Common */
@@ -223,7 +240,7 @@ section {
 
 /* Experience Section */
 #experience {
-    background-color: #f8f9fa;
+    background-color: var(--bg-accent);
 }
 
 .timeline {
@@ -262,14 +279,14 @@ section {
     display: inline-block;
     margin-bottom: 10px;
     font-size: 0.9rem;
-    color: var(--text-light);
-    background-color: var(--light-color);
+    color: var(--text-color);
+    background-color: rgba(74, 158, 255, 0.15);
     padding: 4px 12px;
     border-radius: 15px;
 }
 
 .timeline-content {
-    background-color: var(--bg-color);
+    background-color: var(--bg-light);
     padding: 25px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -307,7 +324,7 @@ section {
 }
 
 .education-item {
-    background-color: #f8f9fa;
+    background-color: var(--bg-light);
     padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -338,7 +355,7 @@ section {
 
 /* Skills Section */
 #skills {
-    background-color: #f8f9fa;
+    background-color: var(--bg-accent);
 }
 
 .skills-container {
@@ -349,12 +366,18 @@ section {
 }
 
 .skills-category {
-    background-color: var(--bg-color);
+    background-color: var(--bg-light);
     padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     flex: 1 1 300px;
     max-width: 500px;
+}
+
+.certification-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .skills-category h3 {
@@ -370,8 +393,8 @@ section {
 }
 
 .skill-tag {
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    background-color: var(--bg-accent);
+    color: var(--light-color);
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -391,13 +414,13 @@ section {
 .certification {
     padding: 15px;
     border-radius: var(--border-radius);
-    background-color: #f0f7ff;
+    background-color: rgba(74, 158, 255, 0.15);
     margin-bottom: 10px;
     transition: var(--transition);
 }
 
 .certification:hover {
-    background-color: var(--light-color);
+    background-color: rgba(74, 158, 255, 0.25);
 }
 
 .certification-name {
@@ -430,7 +453,7 @@ section {
     align-items: center;
     gap: 15px;
     padding: 15px;
-    background-color: #f8f9fa;
+    background-color: var(--bg-light);
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
@@ -456,7 +479,7 @@ section {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #f8f9fa;
+    background-color: var(--bg-light);
     border-radius: 50%;
     transition: var(--transition);
 }
@@ -478,7 +501,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #f8f9fa;
+    background-color: var(--bg-color);
     padding: 30px 0;
     text-align: center;
     color: var(--text-light);
