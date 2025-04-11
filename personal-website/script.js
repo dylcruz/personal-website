@@ -72,24 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Add active class to nav links
-    const addActiveClass = () => {
-        let navLinks = document.querySelectorAll('.nav-links a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(navLink => navLink.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    };
-    
-    addActiveClass();
 
     // Update copyright year
     const currentYear = new Date().getFullYear();
-    const copyrightElement = document.querySelector('footer p');
-    if (copyrightElement) {
-        copyrightElement.textContent = `© ${currentYear} Dylan Cruz. All rights reserved.`;
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
     }
 }); 

@@ -344,8 +344,6 @@ section {
     margin: 0 0 5px 0;
     padding: 0;
     display: block;
-    background: none;
-    box-shadow: none;
 }
 
 .education-item h4 {
@@ -354,8 +352,6 @@ section {
     color: var(--text-color);
     padding: 0;
     display: block;
-    background: none;
-    box-shadow: none;
 }
 
 .education-item p {
@@ -364,8 +360,6 @@ section {
     margin: 0;
     padding: 0;
     display: block;
-    background: none;
-    box-shadow: none;
 }
 
 /* Skills Section */
@@ -590,7 +584,6 @@ footer {
 
     .education-item {
         margin-bottom: 0;
-        display: block;
     }
 }
 
@@ -642,7 +635,6 @@ footer {
     }
     
     .education-item {
-        margin-bottom: 0;
         background-color: rgba(45, 45, 45, 0.95);
         padding: 12px 15px;
     }
@@ -651,20 +643,17 @@ footer {
         font-size: 1rem;
         margin-bottom: 3px;
         line-height: 1.3;
-        background: none;
     }
     
     .education-item h4 {
         font-size: 0.9rem;
         margin-bottom: 3px;
         line-height: 1.3;
-        background: none;
     }
     
     .education-item p {
         font-size: 0.8rem;
         line-height: 1.3;
-        background: none;
     }
 
     #education .section-title {
