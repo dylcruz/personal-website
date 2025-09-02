@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://dylancruz.me/sitemap.xml 
+Disallow: /images/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://dylancruz.me/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 

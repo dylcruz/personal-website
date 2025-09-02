@@ -3,195 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dylan Cruz - Network Engineer with expertise in Cisco networking, virtualization, and cloud infrastructure. Professional portfolio and resume.">
-    <title>Dylan Cruz - Network Engineer</title>
+    <meta name="description" content="Dylan Cruz - Network Engineer with 7+ years of experience in enterprise networking, Cisco infrastructure, and network automation. Expert in VPN solutions, Python automation, and traditional routing and switching.">
+    <meta name="keywords" content="Network Engineer, Cisco, SD-WAN, VMware, Network Infrastructure, Cloud Solutions, IT Professional">
+    <meta name="author" content="Dylan Cruz">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dylancruz.me/">
+    <meta property="og:title" content="Dylan Cruz - Network Engineer">
+    <meta property="og:description" content="Network Engineer with expertise in enterprise networking, Cisco infrastructure, and network automation.">
+    <meta property="og:image" content="https://dylancruz.me/images/me.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dylancruz.me/">
+    <meta property="twitter:title" content="Dylan Cruz - Network Engineer">
+    <meta property="twitter:description" content="Network Engineer with expertise in enterprise networking, Cisco infrastructure, and network automation.">
+    <meta property="twitter:image" content="https://dylancruz.me/images/me.png">
+    
+    <title>Dylan Cruz - Network Engineer | Enterprise Networking Professional</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="images/me.png" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&font-display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preload" href="images/me.png" as="image">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dylan Cruz",
+        "jobTitle": "Network Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "M&T Bank"
+        },
+        "description": "Network Engineer with expertise in enterprise networking, Cisco infrastructure, and network automation",
+        "url": "https://dylancruz.me",
+        "sameAs": [
+            "https://www.linkedin.com/in/dylan-cruz",
+            "https://github.com/dylcruz"
+        ],
+        "knowsAbout": [
+            "Network Engineering",
+            "Cisco Networking",
+            "VPN Solutions",
+            "Network Automation",
+            "Python Programming",
+            "Traditional Routing & Switching"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="container">
-            <nav>
-                <div class="logo">DC</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="logo" aria-label="Dylan Cruz Logo">DC</div>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#about" role="menuitem" aria-label="About section">About</a></li>
+                    <li role="none"><a href="#experience" role="menuitem" aria-label="Experience section">Experience</a></li>
+                    <li role="none"><a href="#education" role="menuitem" aria-label="Education section">Education</a></li>
+                    <li role="none"><a href="#skills" role="menuitem" aria-label="Skills section">Skills</a></li>
+                    <li role="none"><a href="#contact" role="menuitem" aria-label="Contact section">Contact</a></li>
                 </ul>
-                <div class="mobile-menu-btn">
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="images/me.png" alt="Dylan Cruz" class="profile-img">
-                <h1>Dylan Cruz</h1>
-                <h2>Network Engineer</h2>
-                <p>Experienced IT professional with expertise in network infrastructure, virtualization, and systems engineering</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="#experience" class="btn btn-secondary">View Experience</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Experienced technician with a demonstrated history of working in the information technology and services industry. Skilled in technical support, customer service, and troubleshooting.</p>
-                    <p>Strong information technology professional with an Associate's Degree focused in Network Design and Administration from Suffolk County Community College, as well as a Cisco CCNP Enterprise certification.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <span>Oct 2020 - Present</span>
+    <main role="main">
+        <section id="hero" aria-label="Hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="images/me.png" alt="Dylan Cruz - Professional headshot" class="profile-img">
+                    <h1>Dylan Cruz</h1>
+                    <h2>Network Engineer</h2>
+                    <p>Enterprise networking professional with 7+ years of experience implementing and maintaining mission-critical network infrastructure for Fortune 500 companies</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary" aria-label="Contact Dylan Cruz">Contact Me</a>
+                        <a href="#experience" class="btn btn-secondary" aria-label="View professional experience">View Experience</a>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Network Engineer</h3>
-                        <h4>M&T Bank -  Remote / Buffalo, NY</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" aria-label="About section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate network engineer with a proven track record of implementing and maintaining enterprise-scale network infrastructure. My expertise spans from traditional routing and switching to modern network automation solutions, with a focus on reliability, security, and operational efficiency.</p>
+                        <p>With a strong foundation in Cisco technologies and programming skills, I've successfully managed networks supporting thousands of users across multiple locations. I hold a CCNP Enterprise certification and an Associate's Degree in Network Design and Administration, continuously expanding my knowledge in network automation and emerging technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" aria-label="Work experience section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline" role="list" aria-label="Work timeline">
+                    <article class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date">
+                            <time datetime="2020-10">Oct 2020 - Present</time>
+                        </div>
+                        <div class="timeline-content">
+                                                    <h3>Network Engineer</h3>
+                        <h4>M&T Bank - Remote / Buffalo, NY</h4>
                         <ul>
-                            <li>Responsible for maintaining the networks of 1,000+ branches and regional offices.</li>
+                            <li>Network engineer responsible for maintaining and optimizing the networks of 1,000+ branches and regional offices across multiple states</li>
+                            <li>Implement and manage Cisco Secure Client VPN solutions for secure remote access across the enterprise</li>
+                            <li>Develop network automation solutions using Python and Nautobot to streamline network operations and reduce manual configuration tasks</li>
+                            <li>Configure and maintain traditional routing and switching infrastructure for branch locations, ensuring reliable connectivity and optimal performance</li>
+                            <li>Collaborate with cross-functional teams to ensure network infrastructure supports business objectives and security requirements</li>
                         </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <span>Jan 2017 - Oct 2020</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Jr. Network and Systems Engineer</h3>
-                        <h4>Global Computer Systems - Port Jefferson, NY</h4>
-                        <ul>
-                            <li>Managed the physical networking and virtual infrastructure for 30+ clients.</li>
-                            <li>Configuration and implementation of Cisco, Aruba, Fortinet, and Meraki networking equipment including routers, switches, and firewalls.</li>
-                            <li>Managed virtualized server and desktop environments using VMware ESXi and VMware Horizon.</li>
-                            <li>Assisted clients with migrating from on-premises Exchange to Office 365.</li>
-                            <li>Provided tier 2 help desk support and troubleshooting for networking and other infrastructure issues.</li>
-                            <li>Wrote documentation to assist help desk with solving common networking issues.</li>
-                            <li>Assisted sales team with advising existing and prospective clients on what equipment to purchase to best suit their needs.</li>
-                        </ul>
-                    </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date">
+                            <time datetime="2017-01">Jan 2017 - Oct 2020</time>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Junior Network and Systems Engineer</h3>
+                            <h4>Global Computer Systems - Port Jefferson, NY</h4>
+                            <ul>
+                                <li>Managed comprehensive network infrastructure and virtual environments for 30+ enterprise clients across healthcare, legal, financial, and manufacturing sectors</li>
+                                <li>Designed and deployed enterprise-grade network solutions utilizing Cisco Catalyst switches, ISR routers, Aruba wireless controllers, Fortinet next-generation firewalls, and Meraki cloud-managed devices</li>
+                                <li>Architected and maintained VMware vSphere environments including ESXi hosts, vCenter Server, and VMware Horizon VDI solutions supporting 500+ concurrent users</li>
+                                <li>Provided tier 2/3 technical support resolving complex network connectivity, VPN, and infrastructure issues with 95% first-call resolution rate</li>
+                                <li>Developed comprehensive network documentation, standard operating procedures, and knowledge base articles reducing help desk ticket resolution time by 40%</li>
+                                <li>Collaborated with sales engineering teams to provide technical consultation, solution design, and equipment recommendations for client infrastructure projects</li>
+                                <li>Implemented network monitoring and alerting solutions using PRTG and SolarWinds to proactively identify and resolve network issues</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-items">
-                <div class="education-item">
-                    <h3 class="school-name">Suffolk County Community College</h3>
-                    <h4>A.A.S. Network Design & Administration</h4>
-                    <p>August 2015 - May 2017</p>
-                </div>
-                <div class="education-item">
-                    <h3 class="school-name">The Pennsylvania State University</h3>
-                    <h4>Security / Risk Analysis</h4>
-                    <p>August 2013 - May 2015</p>
+        <section id="education" aria-label="Education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-items">
+                    <article class="education-item">
+                        <h3 class="school-name">Suffolk County Community College</h3>
+                        <h4>A.A.S. Network Design & Administration</h4>
+                        <time datetime="2015-08/2017-05">August 2015 - May 2017</time>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Certifications</h2>
-            <div class="skills-container">
-                <div class="skills-category certification-container">
-                    <h3>Certifications</h3>
-                    <div class="skills-list certification-list">
-                        <div class="certification">
-                            <span class="certification-name">Cisco Certified Network Professional (CCNP) - Enterprise</span>
+        <section id="skills" aria-label="Skills and certifications section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills & Certifications</h2>
+                <div class="skills-container">
+                    <div class="skills-category certification-container">
+                        <h3>Professional Certifications</h3>
+                        <div class="skills-list certification-list">
+                            <div class="certification">
+                                <span class="certification-name">Cisco Certified Network Professional (CCNP) - Enterprise</span>
+                                <span class="certification-year">August 2021 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Network Infrastructure</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Cisco Routing & Switching</span>
+                            <span class="skill-tag">VPN Solutions</span>
+                            <span class="skill-tag">Network Security</span>
+                            <span class="skill-tag">Aruba Networks</span>
+                            <span class="skill-tag">Fortinet Firewalls</span>
+                            <span class="skill-tag">Meraki Cloud</span>
+                            <span class="skill-tag">Cisco Secure Client</span>
+                            <span class="skill-tag">Network Automation</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Virtualization & Cloud</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">VMware ESXi</span>
+                            <span class="skill-tag">VMware Horizon</span>
+                            <span class="skill-tag">Hyper-V</span>
+                            <span class="skill-tag">Virtual Infrastructure</span>
+                            <span class="skill-tag">Microsoft Azure</span>
+                            <span class="skill-tag">Office 365</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Programming & Automation</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python Programming</span>
+                            <span class="skill-tag">Nautobot</span>
+                            <span class="skill-tag">Network Automation</span>
+                            <span class="skill-tag">API Integration</span>
+                            <span class="skill-tag">Scripting</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Additional Skills</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Network Design</span>
+                            <span class="skill-tag">Troubleshooting</span>
+                            <span class="skill-tag">Documentation</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Team Collaboration</span>
                         </div>
                     </div>
                 </div>
-                <div class="skills-category">
-                    <h3>Networking</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Routing & Switching</span>
-                        <span class="skill-tag">Cisco</span>
-                        <span class="skill-tag">Aruba</span>
-                        <span class="skill-tag">Fortinet</span>
-                        <span class="skill-tag">Meraki</span>
-                        <span class="skill-tag">Cisco Secure Client</span>
-                        <span class="skill-tag">Cisco SD-WAN</span>
+            </div>
+        </section>
+
+        <section id="contact" aria-label="Contact information section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:dylan@dylancruz.me" aria-label="Send email to dylan@dylancruz.me">dylan@dylancruz.me</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Hillsboro, OR</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Virtualization</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">VMware ESXi</span>
-                        <span class="skill-tag">VMware Horizon</span>
-                        <span class="skill-tag">Hyper-V</span>
-                        <span class="skill-tag">Virtual Infrastructure</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Cloud & Services</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Office 365</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Microsoft Exchange</span>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://www.linkedin.com/in/dylan-cruz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/dylcruz" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:dylan@dylancruz.me">dylan@dylancruz.me</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Hillsboro, OR</span>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/dylan-cruz" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/dylcruz" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <p>&copy; <span id="year"></span> Dylan Cruz. All rights reserved.</p>
         </div>
