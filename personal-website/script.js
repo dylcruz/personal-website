@@ -43,24 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Toggle menu state
             navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
             
             // Update ARIA attributes
             mobileMenuBtn.setAttribute('aria-expanded', !isActive);
             navLinks.setAttribute('aria-hidden', isActive);
-            
-            // Animate hamburger to X
-            const spans = mobileMenuBtn.querySelectorAll('span');
-            if (spans.length === 3) {
-                if (!isActive) {
-                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                    spans[1].style.opacity = '0';
-                    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-                } else {
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
-                }
-            }
         });
 
         // Close menu on escape key
